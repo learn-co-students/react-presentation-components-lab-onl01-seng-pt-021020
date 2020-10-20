@@ -7,7 +7,7 @@ import SimplerComponent from './components/SimplerComponent';
 ReactDOM.render(
   <div>
     <SimpleComponent />
-    <SimplerComponent handleClick={undefined} />
+    <SimplerComponent handleClick={event => event.target.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16)} />
   </div>,
   document.getElementById('root')
 );
